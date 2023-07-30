@@ -1,0 +1,33 @@
+
+
+Python
+import random
+
+def roll_dice():
+  """Rolls a dice and returns the random number."""
+  min_value = 1
+  max_value = 6
+  return random.randint(min_value, max_value)
+
+def main():
+  """The main function that runs the game."""
+  roll_again = "yes"
+  while roll_again == "yes" or roll_again == "y":
+    print("Rolling the dice...")
+    value = roll_dice()
+    print(f"The value of the dice is {value}")
+    roll_again = input("Press 'y' or 'yes' to roll the dice again.")
+
+if _name_ == "_main_":
+  main()
+Use code with caution. Learn more
+This code first imports the random module. Then, it defines a function called roll_dice() that rolls a dice and returns the random number. The function takes no arguments and returns an integer.
+
+The main function then runs the game. The function first asks the user if they want to roll the dice again. If the user inputs "yes" or "y", the function rolls the dice again by calling the roll_dice() function. Otherwise, the function exits the loop.
+
+The code then prints the value of the dice. Finally, the code asks the user if they want to roll the dice again.
+
+To run the code, you can save it as a Python file and then run it from the command line. For example, if you save the code as roll_dice.py, you can run it by typing the following command into the command line:
+
+python roll_dice.py
+This will run 
